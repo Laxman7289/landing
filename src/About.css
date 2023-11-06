@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #000; */
+}
+.bg {
+  background-color: rgb(27, 27, 27);
+  width: 100vw;
+  /* height: 100vh; */
+}
+.imgnav {
+  width: 100vw;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/95/686/440/training-gyms-motivational-typography-wallpaper-preview.jpg);
+}
+.navDesktop {
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav a {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #bfbaba;
+  padding: 6px 20px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(254, 4, 4);
+}
+
+.navbar {
+  display: flex;
+  height: 67px;
+  border-radius: 125px 25px;
+}
+.navbar li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.rbtn {
+  width: 35px;
+  height: 31px;
+  margin: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.oneBox {
+  /* height: 36rem;
+  padding: 50px; */
+  margin-left: 9vw;
+  margin-top: 86px;
+}
+
+h2 {
+  color: brown;
+  font-size: 1.5em;
+}
+h1 {
+  color: #fff;
+  /* font-size: 3rem; */
+  padding: 20px 0;
+}
+h3 {
+  color: brown;
+  font-size: 1.8em;
+  padding-bottom: 33px;
+}
+p {
+  color: #fff;
+}
+.rightbox {
+  width: 50%;
+  height: 50vh;
+  color: #fff;
+}
+.leftbox {
+  width: 50%;
+}
+.gymimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 750px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .sbtn {
+   
+    margin-left: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .boxSec {
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    font-weight: 900;
+  }
+  .leftbox{
+    width: 100%;
+  }
+  .gymimg {
+    width: 80vw;
+    height: 45vh;
+  }
+  /* #gymimg {
+    display: none;
+  } */
+}

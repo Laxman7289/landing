@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 100vw;
+  background-color: rgb(1, 1, 1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section1 {
+  max-height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.topleft {
+  width: 50%;
   color: white;
 }
+.topright {
+  width: 50%;
+}
+.section1 h1 {
+  font-size: 2rem;
+}
+.logo {
+  font-size: 2rem;
+}
+.dumbbell {
+  width: 289px;
+  filter: drop-shadow(0px 0px 0.8em rgb(108, 100, 100));
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.topright .gymimage {
+  width: 488px;
+  filter: drop-shadow(0px 0px 0.8em rgb(108, 100, 100));
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.section2 {
+  padding: 80px;
+}
+.section2 h1 {
+  font-size: 3rem;
+}
+.section2 p {
+  padding: 0 7vw;
+  text-align: center;
+}
+.box {
+  padding: 8px 0;
+  margin: 12px 23px;
+  min-width: 20vw;
+  border-radius: 5px;
+  border: 2px solid rgb(132, 55, 11);
+  text-align: center;
+  color: white;
+}
+.box h2 {
+  font-size: 2rem;
+  padding: 15px;
+}
+.highlighted {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.box ul {
+  list-style: none;
+}
+.box ul li {
+  margin: 12px 30px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(251, 243, 243);
+}
+.plantable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 {
+  padding: 200px;
+  color: white;
+}
+.section3 table {
+  width: 100%;
+  margin-bottom: 140px 0;
+  margin-top: 40px 0;
+  border-collapse: collapse;
 
-.App-link {
-  color: #61dafb;
+}
+.section3 table th {
+  width: 23vw;
+  border-bottom: 2px solid rgb(254, 254, 254);
+  padding: 15px 0;
+
+}
+.section3 table td {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.section3 h1 {
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  padding: 23px;
+  text-align: center;
+  color: white;
+}
+i {
+  color: brown;
+  z-index: 1;
+}
+.navDesktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navMobile {
+  display: none;
+}
+.SIDEBAR {
+  position: absolute;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+.SIDEBAR ul {
+  margin-top: 40%;
+}
+.SIDEBAR ul li{
+  padding-bottom: 22px;
+  list-style: none;
+  font-size: 30px;
+}
+.SIDEBAR ul li .btn{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.rbtn{
+  width: 35px;
+  height: 31px;
+  margin: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 703px) {
+  .navMobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .navDesktop {  
+    display: none;
+  }
+  .container {
+    width: 100vw;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: flex;
+    /* box-sizing: border-box; */
+  }
+  #navbar {
+    display: none;
+  }
+  .items-center {
+    justify-content: center;
+    align-items: center;
+  }
+  #topright {
+    display: none;
+  }
+  .dumbbell {
+    width: 164px;
+  }
+  .topleft {
+    width: 100%;
+  }
+  .section2 {
+    width: 100%;
+    padding: 4px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section3 {
+    padding: 0px;
+  }
+  .minibox{
+    width: 50vw;
+    margin-left: 10em;
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }

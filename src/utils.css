@@ -1,0 +1,78 @@
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+.over-flow{
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.text-bold {
+  font-weight: 900;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.my-1{
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.my-2{
+  margin-top: 23px;
+  margin-bottom: 100px;
+
+  color: #fff;
+}
+.px-2{
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 140px;
+}
+.text-blue{
+  color: rgb(249, 237, 237);
+
+}
+.btn{
+  padding: 5px 12px;
+  cursor: pointer;
+  color:#fff;
+  background-color: rgba(92, 92, 92, 0.841);
+  border-radius: 7px;
+  filter: drop-shadow(0px 0px 0.80em rgb(60, 60, 60));
+
+}
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+.text-center{
+  text-align: center;
+}
+
+
+.btn:hover {
+  transform: scale(1.05);
+  animation-name: background-color;
+  animation-duration: 150ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+      background-color: hsl(22, 94%, 55%);
+    }
+}
